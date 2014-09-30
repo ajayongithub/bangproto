@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+html, body{min-height:100%; height:100%}
+body{padding:0; margin:0; color:#FFF; font-family:helvetica}
+.main-container{background:url(../../../images/kiosk/ash/site-bg.jpg) 0 0 no-repeat; background-size:cover; height:100%; width:100%; min-height:100%; overflow:hidden}
+.img-left{ position:absolute; left:0; top:0; height:100%}
+.img-left img{width:auto; height:90%}
+.img-right{ position:absolute; right:0; top:0; height:100%}
+.img-right img{width:auto; height:100%}
+.text-footer{width:60%; color:#fff; position:absolute; bottom:10px; left:30px}
+.text-footer p{margin:0}
+
+.login-box{ position:absolute; left:0; right:0; top:0; bottom:0; margin:auto; width:157px; height:90px; z-index:100}
+.name{background:url(../../../images/kiosk/ash/name.jpg) 0 0 no-repeat; display:block; margin-bottom:20px; width:157px; height:35px}
+.fb-btn{background:url(../../../images/kiosk/ash/fb-btn.jpg) 0 0 no-repeat; display:block; margin-bottom:20px; width:157px; height:35px}
+.name-text {background-color:#105712 ; border-color:#33e10b; display:block; margin-bottom:20px; width:157px; height:35px; color:white; }
+.action-box{ position:absolute; left:0; right:0; top:0; bottom:0; margin:auto; width:310px; height:475px; z-index:100; text-align:center}
+.action-box p{margin:10px 0}
+.action-1{background:url(../../../images/kiosk/ash/action-1.jpg) 0 0 no-repeat; display:block; margin-bottom:20px; width:189px; height:106px; display:block; margin:5px auto}
+.action-2{background:url(../../../images/kiosk/ash/action-2.jpg) 0 0 no-repeat; display:block; margin-bottom:20px; width:189px; height:106px; display:block; margin:5px auto}
+.action-3{background:url(../../../images/kiosk/ash/action-3.jpg) 0 0 no-repeat; display:block; margin-bottom:20px; width:189px; height:106px; display:block; margin:5px auto}
+.log-out{background:url(../../../images/kiosk/ash/logout.jpg) 0 0 no-repeat; display:block; margin-bottom:20px; width:157px; height:35px; display:block; margin:5px auto}
+.action-btn{background:url(../../../images/kiosk/ash/action.jpg) 0 0 no-repeat; display:block; margin-bottom:20px; width:157px; height:35px; display:block; margin:5px auto}
