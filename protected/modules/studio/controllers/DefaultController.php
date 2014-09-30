@@ -26,7 +26,7 @@ class DefaultController extends Controller
 			//echo 'Checking for file '.$file->original_video ;
 			//echo 'Path is '.$this->getBaseDownloadPath() ;
 			if(file_exists($this->getBaseDownloadPath().$this->getCompositeFileName($file))){
-				echo "file Exists" ;
+				//echo "file Exists" ;
 				$file->posting_status = 'Processing Complete';
 				$file->save();
 			}else{
