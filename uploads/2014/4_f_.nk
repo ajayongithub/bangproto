@@ -127,7 +127,7 @@ NoOp {
 }
 Read {
  inputs 0
- file Z:/Raw/<<<input_file>>>
+ file Z:/Raw/H-9B6A4266-Tue-23-10.mov
  format "1920 1080 0 0 1920 1080 1 HD"
  last 225
  origlast 225
@@ -1634,7 +1634,7 @@ Viewer {
 }
 push $N14908870
 Write {
- file Z:/Comp/<<<output_file>>>
+ file Z:/Comp/4_f__comp.mov
  file_type mov
  codec avc1
  pixel_format {{1} "default (YCbCr  8-bit 422 (2vuy))" "RGBA  8-bit" "YCbCr  8-bit 422 (2vuy)"}

@@ -10,7 +10,7 @@ public function filters() {
 public function accessRules() {
     return array(
             array('allow', 
-                'actions'=>array('index', 'view'),
+                'actions'=>array('index', 'view','getUsersForMail'),
                 'users'=>array('@'),
                 ),
             array('allow', 
@@ -114,7 +114,14 @@ public function accessRules() {
                 'model' => $model,
         ));
     }
-    
+
+    public function actionGetUsersForMail(){
+    	$users = UserDetails::model()->findAllByAttributes(array('posting_status'=>'Uploaded'),array( 'order' => 'id desc', 'limit' => 10, ));
+    	echo count($users) ;
+    	foreach($users as $user){
+    		echo $user->first_name.',',$user->last_name.','.$user->email ;
+    	}
+    }
     
     public function loadModel($id) {
             $model=UserDetails::model()->findByPk($id);

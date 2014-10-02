@@ -5,7 +5,7 @@ class DefaultController extends Controller
 	
 	private function getBaseUploadPathForFile($file){
 		$loc = $file->location;
-		$path = Yii::app()->getBasePath().'//..//'.Yii::app()->params['localUpload'].'//'.$loc.'//2014//' ;
+		$path = Yii::app()->getBasePath().'//..//'.Yii::app()->params['localUpload'].'//2014//' ;
 		return $path ;
 	}
 	private function getBaseDownloadPath(){
@@ -18,11 +18,11 @@ class DefaultController extends Controller
 	}
 	public function actionFetchProcessedFiles(){
 		
-		$filesLinked = UserDetails::model()->findAllByAttributes(array('status'=>'Video Uploaded'));
+		$filesLinked = UserDetails::model()->findAllByAttributes(array('status'=>'Video Uploaded' , 'posting_status'=>null));
 	//	echo 'count uploaded is '.count($processing) ;
 		if(count($filesLinked)==0) $this->redirect('index') ;
-		
-		foreach($filesLinked as $file){
+		        
+		foreach($filesLinked as $file){   
 			//echo 'Checking for file '.$file->original_video ;
 			//echo 'Path is '.$this->getBaseDownloadPath() ;
 			if(file_exists($this->getBaseDownloadPath().$this->getCompositeFileName($file))){
@@ -30,7 +30,7 @@ class DefaultController extends Controller
 				$file->posting_status = 'Processing Complete';
 				$file->save();
 			}else{
-				//echo 'File does not exist ' ;
+				//echo 'File does not exist ' ; 
 			}
 		
 		}
@@ -105,7 +105,7 @@ class DefaultController extends Controller
 	public function actionIndex()
 	{
 		$this->checkVideoUploaded() ;
-		$model = new UserDetails('searchVideoPoint');
+		$model = new UserDetails('search');
 		$model->unsetAttributes();
 	//	$model->location = Yii::app()->request->cookies['siteName'];
 			
@@ -124,7 +124,6 @@ class DefaultController extends Controller
 		echo print_r($_REQUEST);
 	}
 	public function actionPublishVideo($id){
-		Yii::app()->user->setFlash('flashMsg',print_r($_GET['code'],true) ) ;
 		$user = UserDetails::model()->findByPk($id) ;
 		$this->render('upload',array('user'=>$user)) ;
 	}
@@ -138,9 +137,16 @@ class DefaultController extends Controller
 //		}else {
 //			$msg .= print_r($user->error,true) ;
 //		}
-		
+		Yii::log("Session is ".print_r($_SESSION,true));
 //		Yii::app()->user->setFlash('flashMsg',$msg ) ;
-		$this->render('upload');
+		 
+		/* if(isset($_SESSION['uploadUserId'])){
+			$id =	$_SESSION['uploadUserId'] 	;
+			$user = UserDetails::model()->findByPk($id) ;
+			$this->render('upload',array('user'=>$user));
+		}else*/
+			$this->render('upload'); 
+		echo 'Upload Redirected' ;
 	}
 	public function actionMarkBeginProcessing(){
 		$ref = $_POST['href'];

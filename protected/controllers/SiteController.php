@@ -27,27 +27,56 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
-		// renders the view file 'protected/views/site/index.php'
-		// using the default layout 'protected/views/layouts/main.php'
 		if(isset(Yii::app()->request->cookies['siteId'])){
-			$_SESSION['siteId'] = Yii::app()->request->cookies['siteId'];
-			$_SESSION['siteType'] = Yii::app()->request->cookies['siteType'];
-			$_SESSION['siteName'] = Yii::app()->request->cookies['siteName'];
-			if(strcmp('Kiosk',$_SESSION['siteType'])==0){
+			if(strcmp('Tab',Yii::app()->request->cookies['siteType'])==0){
 				$this->redirect(Yii::app()->createUrl(Yii::app()->params['kioskBaseUrl']));
+			}else if(strcmp('Laptop',$_SESSION['siteType'])==0){
+				$this->redirect(Yii::app()->createUrl(Yii::app()->params['videoBaseUrl']));
 			}else{
-				$this->redirect(Yii::app()->createUrl(Yii::app()->params['loginUrl']));
+				$this->redirect(Yii::app()->createUrl(Yii::app()->params['studioBaseUrl']));
 			}
 		}else{
-			$this->redirect(Yii::app()->createUrl(Yii::app()->params['configureUrl']));
+			$this->redirect(Yii::app()->createUrl(Yii::app()->params['configureUrl']));			
 		}
+		
+		// renders the view file 'protected/views/site/index.php'
+		// using the default layout 'protected/views/layouts/main.php'
+		/* if(isset(Yii::app()->request->cookies['siteId'])){
+			Yii::log("Site id is set");
+			$id = Yii::app()->request->cookies['siteId'] ;
+			Yii::log('id is :'.$id);
+			$loc = Locations::model()->findByAttributes(array('id'=>$id));
+			if($loc==null||strcmp($loc->site_name,Yii::app()->request->cookies['siteName'])!=0 
+				|| strcmp($loc->site_type,Yii::app()->request->cookies['siteType'])!=0){
+				unset(Yii::app()->request->cookies['siteName']);
+				unset(Yii::app()->request->cookies['siteId']);
+				unset(Yii::app()->request->cookies['siteType']);
+				Yii:log("routing to configure url ".Yii::app()->params['configureUrl']);
+				$this->redirect(Yii::app()->createUrl(Yii::app()->params['configureUrl']));
+			}else{
+				
+				$_SESSION['siteId'] = Yii::app()->request->cookies['siteId'];
+				$_SESSION['siteType'] = Yii::app()->request->cookies['siteType'];
+				$_SESSION['siteName'] = Yii::app()->request->cookies['siteName'];
+				if(strcmp('Tab',$_SESSION['siteType'])==0){
+					$this->redirect(Yii::app()->createUrl(Yii::app()->params['kioskBaseUrl']));
+				}else{
+					$this->redirect(Yii::app()->createUrl(Yii::app()->params['loginUrl']));
+				}
+			}
+		}else{
+			Yii:log("routing to configure url ".Yii::app()->params['configureUrl']);
+			$this->redirect(Yii::app()->createUrl(Yii::app()->params['configureUrl']));
+		} */
+
 
 	}
 
 	public function actionBranch(){
 		$type = Yii::app()->request->cookies['siteType'];
+		
 		if(strcmp('Studio',$type)==0){
-			echo 'Studio' ;
+			$this->redirect(Yii::app()->createUrl(Yii::app()->params['studioBaseUrl']));;
 		}else {
 			$this->redirect(Yii::app()->createUrl(Yii::app()->params['videoBaseUrl']));
 		}
@@ -88,11 +117,11 @@ class SiteController extends Controller
 						Yii::app()->user->setFlash('flashMsg','Your terminal has been successfully registered.') ;
 					}else{
 						Yii::app()->user->setFlash('flashMsg','Site is already registered, please contact administrator.') ;
-						$redirectUrl = Yii::app()->params['configureUrl'] ;
+						$redirectUrl = Yii::app()->createUrl(Yii::app()->params['configureUrl']) ;
 					}
 				}else{
 						Yii::app()->user->setFlash('flashMsg','Invalid security code, please retry.') ;
-						$redirectUrl = Yii::app()->params['configureUrl'] ;
+						$redirectUrl = Yii::app()->createUrl(Yii::app()->params['configureUrl']) ;
 				}
 					
 			

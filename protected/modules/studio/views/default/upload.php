@@ -3,8 +3,11 @@ Yii::import('application.vendors.*');
 // Call set_include_path() as needed to point to your client library.
 require_once 'Google/Client.php';
 require_once 'Google/Service/YouTube.php';
-if(!isset($_SESSION))
+if(!isset($_SESSION)){
 	session_start();
+}else{
+	Yii::log('Session already started'.print_r($_SESSION,true)) ;
+}
 
 /*
  * You can acquire an OAuth 2.0 client ID and client secret from the
@@ -20,11 +23,23 @@ $client = new Google_Client();
 $client->setClientId($OAUTH2_CLIENT_ID);
 $client->setClientSecret($OAUTH2_CLIENT_SECRET);
 $client->setScopes('https://www.googleapis.com/auth/youtube');
+
+
+$mailContent = ' Hi <<<username>>>,
+
+Your personalised Heroes Wanted trailer is now available online at <<<yt_link>>>
+
+Share and let the world know that Hrithik & you are on the look out for the nation’s most Bang Bang heroes.
+
+Go Bang Bang
+Mountain Dew India
+
+#MountainDewBangBang #HeroesWanted' ;
 //$redirect = filter_var('http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'],
 //    FILTER_SANITIZE_URL);
 
             //'http://splatstudio.in/bangbang/studio/default/upload'
-$redirect = 'http://splatstudio.in/bangbang/studio/default/upload';//?id='.$user->id;
+$redirect = 'http://splatstudio.in/hw/studio/default/upload';//?id='.$user->id;
 $client->setRedirectUri($redirect);
 $_SESSION['yt_user_id'] = $user->id ;
 // Define an object that will be used to make all API requests. 
@@ -56,16 +71,16 @@ echo "4.1" ;
   	$splitArr = str_split($user->gender) ;
   	$compName = $user->id.'_'.$splitArr[0].'_'.$user->extra.'_comp.mov' ;
   	 
-  	$videoPath  = "/var/chroot/home/content/92/8982692/html/bangbang/composite/".$compName;
+  	$videoPath  = "/var/chroot/home/content/92/8982692/html/hw/composite/".$compName;
 
     // Create a snippet with title, description, tags and category ID
     // Create an asset resource and set its snippet metadata and type.
     // This example sets the video's title, description, keyword tags, and
     // video category.
     $snippet = new Google_Service_YouTube_VideoSnippet();
-    $snippet->setTitle("Test title");
-    $snippet->setDescription("Test description");
-    $snippet->setTags(array("tag1", "tag2"));
+    $snippet->setTitle($user->first_name." joined the league of heroes #heroeswanted");
+    $snippet->setDescription($user->first_name." Go Bang Bang with Mountain Dew India");
+    $snippet->setTags(array("#MountainDewBangBang","#HeroesWanted"));
 
     // Numeric video category. See
     // https://developers.google.com/youtube/v3/docs/videoCategories/list 
@@ -134,7 +149,9 @@ echo "4.1" ;
 	$user->remarks = $url ;
 	$user->posting_status = "Uploaded" ;
 	$user->save();
-	$retVal = mail($user->email,"Video at Youtube","Your Heroes Wanted Video is available at :".$user->remarks,"From: no-reply@splatstudio.in ");
+	$replacedContent = str_replace(array("<<<username>>>","<<<yt_link>>>"),array($user->name,$url),$mailContent) ;
+	//$retVal = mail($user->email,"Your Heroes Wanted trailer",$replacedContent,"From: mountaindewindia@gmail.com ");
+	//$retVal = mail("dummyheroes@gmail.com","Your Heroes Wanted trailer",$replacedContent,"From: mountaindewindia@gmail.com ");
 	$htmlBody .= 'Mail result '.$retVal ;
   } catch (Google_ServiceException $e) {
 	//echo "5.1" ;
@@ -155,6 +172,7 @@ echo "4.1" ;
   $state = mt_rand();
   $client->setState($state);
   $_SESSION['state'] = $state;
+  $_SESSION['uploadUserId'] = $user->id ;
 
   $authUrl = $client->createAuthUrl();
   $htmlBody = <<<END

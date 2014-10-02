@@ -147,7 +147,7 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'webmaster@example.com',
-		'configureUrl'=>'/site/configure',
+		'configureUrl'=>'configure',
 		'kioskBaseUrl'=>'kiosk/default',
 		'videoBaseUrl'=>'videoPoint/default',
 		'studioBaseUrl'=>'user/login',

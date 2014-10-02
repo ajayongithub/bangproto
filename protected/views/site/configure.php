@@ -10,6 +10,7 @@
 							<option value="Chennai">Chennai</option>
 							<option value="Hyderabad">Hyderabad</option>
 							<option value="Delhi Studio">Delhi Studio</option>
+							<option value="testloc">Test Loc</option>
 						 </select>
 
 <p>Select the terminal to configure : <select name="terminal">

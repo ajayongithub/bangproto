@@ -7,6 +7,7 @@ $this->breadcrumbs=array(
 );
 ?>
 <h1><?php echo 'Please upload your files here'; ?></h1>
+<h4><?php echo 'Do not close this tab while upload is in progress or in queue'; ?></h4>
 
 <?php
 $this->widget('xupload.XUpload', array(

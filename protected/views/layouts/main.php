@@ -15,7 +15,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
 
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/video/bootstrap-responsive-min.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/video/bootstrap-responsive.min.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/video/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/video/yii.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
@@ -39,7 +39,7 @@
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 			 	array('label'=>'Home', 'url'=>array('/site/index')),
-			 	array('label'=>'Upload', 'url'=>array('/muploader'),'visible'=>!Yii::app()->user->isGuest),
+			 	array('label'=>'Upload', 'url'=>array('/muploader'),'linkOptions' => array('target' => '_blank'),'visible'=>!Yii::app()->user->isGuest),
 			/*	array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'Contact', 'url'=>array('/site/contact')),
 				array('label'=>'Login', 'url'=>array('/user/login'), 'visible'=>Yii::app()->user->isGuest),

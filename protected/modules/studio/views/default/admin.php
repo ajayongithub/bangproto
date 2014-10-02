@@ -70,10 +70,10 @@ return false;
 //        'verified',
         'status',
         'original_video',
-//        'composite_video',
+     //   'composite_video',
         'posting_status',
-//        'remarks',
-        'extra',
+        'remarks',
+//        'extra',
  /* array(
 'class'=>'bootstrap.widgets.BootButtonColumn',
 'htmlOptions'=>array('style'=>'width: 55px'),
@@ -81,15 +81,15 @@ return false;
  */		array
 		(
 				'class'=>'CButtonColumn',
-				'template'=>'{nuke}{fetch}{publish}',//{comp}',
+				'template'=>'{nuke}{publish}',//{comp}',{fetch}
 				'buttons'=>array
 				(
 						'nuke' => array
 						(
 								'label'=>'Nuke',
 								
-		             			'url'=>'$data->id."_".str_split($data->gender)[0]."_".$data->extra',
-								'visible'=>'$data->posting_status == "Studio Updated" ',
+		             			'url'=>'$data->id."_".$data->gender."_".$data->extra',
+								'visible'=>'$data->status == "Video Uploaded" ',
 								'click'=>'function(){nukeExecution($(this).attr("href")) ;'
 								.'$.ajax({ type: "POST", url: "'.Yii::app()->createUrl('studio/default/markBeginProcessing').'", 
 												data: { href: $(this).attr("href") } })
@@ -181,9 +181,9 @@ function nukeExecution(id){
 //	console.log("Got action "+action);
 var oShell = new ActiveXObject("Shell.Application");
 //var commandtoRun = "C://Windows//notepad.exe";
-var commandtoRun = "C:\\Program Files\\Nuke8.0v4\\nuke.exe";
+var commandtoRun = "C://Program Files//Nuke8.0v4//nuke8.0.exe";
 //alert("D://Downloads//ftp_upload//"+id+".nk");
-oShell.ShellExecute(commandtoRun,"D://Downloads//ftp_upload//"+id+".nk","","open","1");
+oShell.ShellExecute(commandtoRun,"Z://Raw//"+id+".nk","","open","1");
  
 
 } 

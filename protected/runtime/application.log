@@ -4668,3 +4668,618 @@ Stack trace:
 REQUEST_URI=/bangproto/css/video/bootstrap-responsive-min.css
 HTTP_REFERER=http://localhost/bangproto/muploader
 ---
+2014/09/30 12:45:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/video/bootstrap-responsive-min.css".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('css/video/boots...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\bangproto\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bangproto/css/video/bootstrap-responsive-min.css
+HTTP_REFERER=http://localhost/bangproto/videoPoint/default/
+---
+2014/09/30 12:45:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/video/bootstrap-responsive-min.css".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('css/video/boots...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\bangproto\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bangproto/css/video/bootstrap-responsive-min.css
+HTTP_REFERER=http://localhost/bangproto/user/login
+---
+2014/09/30 12:45:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/video/bootstrap-responsive-min.css".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('css/video/boots...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\bangproto\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bangproto/css/video/bootstrap-responsive-min.css
+HTTP_REFERER=http://localhost/bangproto/videoPoint/default
+---
+2014/09/30 12:45:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/video/bootstrap-responsive-min.css".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('css/video/boots...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\bangproto\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bangproto/css/video/bootstrap-responsive-min.css
+HTTP_REFERER=http://localhost/bangproto/muploader
+---
+2014/09/30 12:45:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/video/bootstrap-responsive-min.css".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('css/video/boots...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\bangproto\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bangproto/css/video/bootstrap-responsive-min.css
+HTTP_REFERER=http://localhost/bangproto/videoPoint/default
+---
+2014/09/30 12:46:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/video/bootstrap-responsive-min.css".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('css/video/boots...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\bangproto\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bangproto/css/video/bootstrap-responsive-min.css
+HTTP_REFERER=http://localhost/bangproto/videoPoint/default
+---
+2014/09/30 12:46:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/video/bootstrap-responsive-min.css".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('css/video/boots...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\bangproto\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bangproto/css/video/bootstrap-responsive-min.css
+HTTP_REFERER=http://localhost/bangproto/muploader
+---
+2014/09/30 12:46:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/video/bootstrap-responsive-min.css".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('css/video/boots...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\bangproto\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bangproto/css/video/bootstrap-responsive-min.css
+HTTP_REFERER=http://localhost/bangproto/muploader
+---
+2014/09/30 12:48:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/video/bootstrap-responsive-min.css".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('css/video/boots...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\bangproto\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bangproto/css/video/bootstrap-responsive-min.css
+HTTP_REFERER=http://localhost/bangproto/muploader
+---
+2014/09/30 12:48:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/video/bootstrap-responsive-min.css".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('css/video/boots...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\bangproto\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bangproto/css/video/bootstrap-responsive-min.css
+HTTP_REFERER=http://localhost/bangproto/muploader
+---
+2014/09/30 14:16:53 [error] [php] Object of class CHttpCookie could not be converted to int (D:\xampp\htdocs\yii\framework\db\schema\CDbColumnSchema.php:147)
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1431): CMysqlCommandBuilder->createPkCriteria()
+#1 D:\xampp\htdocs\bangproto\protected\controllers\SiteController.php(34): Locations->findByPk()
+#2 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#5 D:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#6 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#7 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\xampp\htdocs\bangproto\index.php(13): CWebApplication->run()
+REQUEST_URI=/bangproto/
+in D:\xampp\htdocs\bangproto\protected\controllers\SiteController.php (34)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/09/30 14:20:06 [error] [php] Object of class CHttpCookie could not be converted to int (D:\xampp\htdocs\yii\framework\db\schema\CDbColumnSchema.php:147)
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1431): CMysqlCommandBuilder->createPkCriteria()
+#1 D:\xampp\htdocs\bangproto\protected\controllers\SiteController.php(34): Locations->findByPk()
+#2 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#5 D:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#6 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#7 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\xampp\htdocs\bangproto\index.php(13): CWebApplication->run()
+REQUEST_URI=/bangproto/
+in D:\xampp\htdocs\bangproto\protected\controllers\SiteController.php (34)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/09/30 14:31:23 [error] [php] Object of class CHttpCookie could not be converted to int (D:\xampp\htdocs\yii\framework\db\schema\CDbColumnSchema.php:147)
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1431): CMysqlCommandBuilder->createPkCriteria()
+#1 D:\xampp\htdocs\bangproto\protected\controllers\SiteController.php(34): Locations->findByPk()
+#2 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#5 D:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#6 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#7 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\xampp\htdocs\bangproto\index.php(13): CWebApplication->run()
+REQUEST_URI=/bangproto/
+in D:\xampp\htdocs\bangproto\protected\controllers\SiteController.php (34)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/09/30 14:33:09 [error] [php] Object of class CHttpCookie could not be converted to int (D:\xampp\htdocs\bangproto\protected\controllers\SiteController.php:35)
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 D:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\xampp\htdocs\bangproto\index.php(13): CWebApplication->run()
+REQUEST_URI=/bangproto/
+in D:\xampp\htdocs\bangproto\protected\controllers\SiteController.php (35)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/09/30 14:37:04 [info] [application] Site id is set
+in D:\xampp\htdocs\bangproto\protected\controllers\SiteController.php (33)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/09/30 14:37:04 [error] [php] Object of class CHttpCookie could not be converted to int (D:\xampp\htdocs\bangproto\protected\controllers\SiteController.php:35)
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 D:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\xampp\htdocs\bangproto\index.php(13): CWebApplication->run()
+REQUEST_URI=/bangproto/
+in D:\xampp\htdocs\bangproto\protected\controllers\SiteController.php (35)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/09/30 14:38:13 [info] [application] Site id is set
+in D:\xampp\htdocs\bangproto\protected\controllers\SiteController.php (33)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/09/30 14:38:13 [info] [application] id is :2
+in D:\xampp\htdocs\bangproto\protected\controllers\SiteController.php (35)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/09/30 14:38:13 [error] [php] Object of class CHttpCookie could not be converted to int (D:\xampp\htdocs\yii\framework\db\schema\CDbColumnSchema.php:147)
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1431): CMysqlCommandBuilder->createPkCriteria()
+#1 D:\xampp\htdocs\bangproto\protected\controllers\SiteController.php(36): Locations->findByPk()
+#2 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#5 D:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#6 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#7 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\xampp\htdocs\bangproto\index.php(13): CWebApplication->run()
+REQUEST_URI=/bangproto/
+in D:\xampp\htdocs\bangproto\protected\controllers\SiteController.php (36)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/09/30 14:42:40 [info] [application] Site id is set
+in D:\xampp\htdocs\bangproto\protected\controllers\SiteController.php (33)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/09/30 14:42:40 [info] [application] id is :2
+in D:\xampp\htdocs\bangproto\protected\controllers\SiteController.php (35)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/09/30 14:42:40 [error] [php] Object of class CHttpCookie could not be converted to int (D:\xampp\htdocs\yii\framework\db\schema\CDbColumnSchema.php:147)
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1431): CMysqlCommandBuilder->createPkCriteria()
+#1 D:\xampp\htdocs\bangproto\protected\controllers\SiteController.php(36): Locations->findByPk()
+#2 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#5 D:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#6 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#7 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\xampp\htdocs\bangproto\index.php(13): CWebApplication->run()
+REQUEST_URI=/bangproto/
+in D:\xampp\htdocs\bangproto\protected\controllers\SiteController.php (36)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/09/30 14:43:55 [info] [application] Site id is set
+in D:\xampp\htdocs\bangproto\protected\controllers\SiteController.php (33)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/09/30 14:43:55 [info] [application] id is :2
+in D:\xampp\htdocs\bangproto\protected\controllers\SiteController.php (35)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/09/30 14:43:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/video/bootstrap-responsive-min.css".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('css/video/boots...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\bangproto\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bangproto/css/video/bootstrap-responsive-min.css
+HTTP_REFERER=http://localhost/bangproto/site/configure
+---
+2014/09/30 14:47:28 [info] [application] Redirect url http://localhost/bangproto
+in D:\xampp\htdocs\bangproto\protected\controllers\SiteController.php (119)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/09/30 14:47:28 [info] [application] Site id is set
+in D:\xampp\htdocs\bangproto\protected\controllers\SiteController.php (33)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/09/30 14:47:28 [info] [application] id is :1
+in D:\xampp\htdocs\bangproto\protected\controllers\SiteController.php (35)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/09/30 14:47:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/video/bootstrap-responsive-min.css".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('css/video/boots...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\bangproto\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bangproto/css/video/bootstrap-responsive-min.css
+HTTP_REFERER=http://localhost/bangproto/site/configure
+---
+2014/09/30 14:47:54 [info] [application] Redirect url http://localhost/bangproto
+in D:\xampp\htdocs\bangproto\protected\controllers\SiteController.php (119)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/09/30 14:47:54 [info] [application] Site id is set
+in D:\xampp\htdocs\bangproto\protected\controllers\SiteController.php (33)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/09/30 14:47:54 [info] [application] id is :2
+in D:\xampp\htdocs\bangproto\protected\controllers\SiteController.php (35)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/09/30 14:47:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/video/bootstrap-responsive-min.css".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('css/video/boots...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\bangproto\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bangproto/css/video/bootstrap-responsive-min.css
+HTTP_REFERER=http://localhost/bangproto/videoPoint/default
+---
+2014/09/30 14:47:58 [info] [application] Site id is set
+in D:\xampp\htdocs\bangproto\protected\controllers\SiteController.php (33)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/09/30 14:47:58 [info] [application] id is :2
+in D:\xampp\htdocs\bangproto\protected\controllers\SiteController.php (35)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/09/30 14:47:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/video/bootstrap-responsive-min.css".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('css/video/boots...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\bangproto\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bangproto/css/video/bootstrap-responsive-min.css
+HTTP_REFERER=http://localhost/bangproto/user/login
+---
+2014/09/30 21:18:07 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "baseUrl".' in D:\xampp\htdocs\yii\framework\base\CComponent.php:265
+Stack trace:
+#0 D:\xampp\htdocs\bangproto\protected\modules\kiosk\views\default\index.php(6): CComponent->__call('baseUrl', Array)
+#1 D:\xampp\htdocs\bangproto\protected\modules\kiosk\views\default\index.php(6): CWebApplication->baseUrl()
+#2 D:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('D:\xampp\htdocs...')
+#3 D:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\xampp\htdocs...', NULL, true)
+#4 D:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\xampp\htdocs...', NULL, true)
+#5 D:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 D:\xampp\htdocs\bangproto\protected\modules\kiosk\controllers\DefaultController.php(8): CController->render('index')
+#7 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#8 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kiosk/default')
+#13 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\xampp\htdocs\bangproto\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/bangproto/kiosk/default
+---
+2014/09/30 21:18:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/right-img.png".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/right-im...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\bangproto\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bangproto/images/right-img.png
+HTTP_REFERER=http://localhost/bangproto/kiosk/default
+---
+2014/09/30 21:18:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/left-img.png".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/left-img...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\bangproto\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bangproto/images/left-img.png
+HTTP_REFERER=http://localhost/bangproto/kiosk/default
+---
+2014/09/30 21:18:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/disclaimer.png".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/disclaim...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\bangproto\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bangproto/images/disclaimer.png
+HTTP_REFERER=http://localhost/bangproto/kiosk/default
+---
+2014/09/30 21:18:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/kiosk/images/site-bg.jpg".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('css/kiosk/image...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\bangproto\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bangproto/css/kiosk/images/site-bg.jpg
+HTTP_REFERER=http://localhost/bangproto/css/kiosk/ash/master.css
+---
+2014/09/30 21:20:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/images/kiosk/ash/site-bg.jpg".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('css/images/kios...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\bangproto\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bangproto/css/images/kiosk/ash/site-bg.jpg
+HTTP_REFERER=http://localhost/bangproto/css/kiosk/ash/master.css
+---
+2014/09/30 21:23:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "configure".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('configure')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\bangproto\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bangproto/configure
+---
+2014/09/30 21:23:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "k".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('k')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\bangproto\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bangproto/k
+---
+2014/09/30 21:47:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "tos".' in D:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('tos')
+#1 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('tos')
+#2 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kiosk/default/t...')
+#3 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\bangproto\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/bangproto/kiosk/default/tos
+HTTP_REFERER=http://192.168.1.9/bangproto/kiosk
+---
+2014/09/30 21:47:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "tos".' in D:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('tos')
+#1 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('tos')
+#2 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kiosk/default/t...')
+#3 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\bangproto\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/bangproto/kiosk/default/tos
+HTTP_REFERER=http://192.168.1.9/bangproto/kiosk
+---
+2014/09/30 21:50:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "tos".' in D:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('tos')
+#1 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('tos')
+#2 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kiosk/default/t...')
+#3 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\bangproto\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/bangproto/kiosk/default/tos
+HTTP_REFERER=http://192.168.1.9/bangproto/kiosk
+---
+2014/09/30 21:51:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "tos".' in D:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('tos')
+#1 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('tos')
+#2 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kiosk/default/t...')
+#3 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\bangproto\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/bangproto/kiosk/default/tos
+HTTP_REFERER=http://192.168.1.9/bangproto/kiosk
+---
+2014/09/30 21:51:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "tos".' in D:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('tos')
+#1 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('tos')
+#2 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kiosk/default/t...')
+#3 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\bangproto\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/bangproto/kiosk/default/tos
+HTTP_REFERER=http://192.168.1.9/bangproto/kiosk
+---
+2014/09/30 21:51:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "tos".' in D:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('tos')
+#1 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('tos')
+#2 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kiosk/default/t...')
+#3 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\bangproto\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/bangproto/kiosk/default/tos
+HTTP_REFERER=http://192.168.1.9/bangproto/kiosk
+---
+2014/10/01 03:17:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "configure".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('configure')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\bangproto\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bangproto/configure
+---
+2014/10/02 09:35:43 [error] [php] Undefined index: location (D:\xampp\htdocs\bangproto\protected\modules\kiosk\controllers\DefaultController.php:33)
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(286): DefaultController->runAction()
+#1 D:\xampp\htdocs\yii\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#2 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): DefaultController->run()
+#3 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\xampp\htdocs\bangproto\index.php(13): CWebApplication->run()
+REQUEST_URI=/bangproto/kiosk/default/storeData
+in D:\xampp\htdocs\bangproto\protected\modules\kiosk\controllers\DefaultController.php (33)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/10/02 09:36:12 [info] [application] Array
+(
+    [response] => abcd
+    [siteName] => 
+    [siteId] => 
+)
+
+in D:\xampp\htdocs\bangproto\protected\modules\kiosk\controllers\DefaultController.php (33)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/10/02 09:36:12 [error] [php] Illegal string offset 'gender' (D:\xampp\htdocs\bangproto\protected\modules\kiosk\controllers\DefaultController.php:36)
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(286): DefaultController->runAction()
+#1 D:\xampp\htdocs\yii\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#2 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): DefaultController->run()
+#3 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\xampp\htdocs\bangproto\index.php(13): CWebApplication->run()
+REQUEST_URI=/bangproto/kiosk/default/storeData
+in D:\xampp\htdocs\bangproto\protected\modules\kiosk\controllers\DefaultController.php (36)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/10/02 09:37:13 [info] [application] Array
+(
+    [response] => abcd
+    [siteName] => 
+    [siteId] => 
+)
+
+in D:\xampp\htdocs\bangproto\protected\modules\kiosk\controllers\DefaultController.php (33)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/10/02 09:37:13 [error] [php] Illegal string offset 'gender' (D:\xampp\htdocs\bangproto\protected\modules\kiosk\controllers\DefaultController.php:36)
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(286): DefaultController->runAction()
+#1 D:\xampp\htdocs\yii\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#2 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): DefaultController->run()
+#3 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\xampp\htdocs\bangproto\index.php(13): CWebApplication->run()
+REQUEST_URI=/bangproto/kiosk/default/storeData
+in D:\xampp\htdocs\bangproto\protected\modules\kiosk\controllers\DefaultController.php (36)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/10/02 09:38:29 [info] [application] Array
+(
+    [response] => abcd
+    [siteName] => 
+    [siteId] => 
+)
+
+in D:\xampp\htdocs\bangproto\protected\modules\kiosk\controllers\DefaultController.php (33)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/10/02 09:38:29 [error] [php] Illegal string offset 'gender' (D:\xampp\htdocs\bangproto\protected\modules\kiosk\controllers\DefaultController.php:36)
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(286): DefaultController->runAction()
+#1 D:\xampp\htdocs\yii\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#2 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): DefaultController->run()
+#3 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\xampp\htdocs\bangproto\index.php(13): CWebApplication->run()
+REQUEST_URI=/bangproto/kiosk/default/storeData
+in D:\xampp\htdocs\bangproto\protected\modules\kiosk\controllers\DefaultController.php (36)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/10/02 10:16:04 [info] [application] Input :H-9B6A4266-Tue-23-10.mp4.mov
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (116)
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (38)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/10/02 10:16:04 [info] [application] output :5_f__comp.mov
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (117)
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (38)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/10/02 10:16:04 [info] [application] nuke :5_f_.nk
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (118)
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (38)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/10/02 10:16:04 [error] [php] file_put_contents(D:\xampp\htdocs\bangproto\protected//..//uploads//2014//5_f_.nk): failed to open stream: No such file or directory (D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php:124)
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): DefaultController->actionLinkFile()
+#1 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\xampp\htdocs\yii\framework\web\CController.php(286): DefaultController->runAction()
+#3 D:\xampp\htdocs\yii\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#4 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): DefaultController->run()
+#5 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#7 D:\xampp\htdocs\bangproto\index.php(13): CWebApplication->run()
+REQUEST_URI=/bangproto/videoPoint/default/linkFile
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (124)
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (38)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/10/02 10:16:32 [error] [exception.CHttpException.500] exception 'CHttpException' with message 'Could not upload file' in D:\xampp\htdocs\bangproto\protected\extensions\xupload-0.5.1\actions\XUploadAction.php:283
+Stack trace:
+#0 D:\xampp\htdocs\bangproto\protected\extensions\xupload-0.5.1\actions\XUploadAction.php(193): XUploadAction->handleUploading()
+#1 D:\xampp\htdocs\yii\framework\web\actions\CAction.php(76): XUploadAction->run()
+#2 D:\xampp\htdocs\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 D:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(XUploadAction))
+#4 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(XUploadAction), Array)
+#5 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('upload')
+#6 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('muploader/uploa...')
+#7 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 D:\xampp\htdocs\bangproto\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/bangproto/muploader/upload
+HTTP_REFERER=http://localhost/bangproto/muploader
+---
+2014/10/02 10:23:52 [info] [application] Input :test_ajay.mp4.mov
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (116)
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (38)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/10/02 10:23:52 [info] [application] output :6_f__comp.mov
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (117)
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (38)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/10/02 10:23:52 [info] [application] nuke :6_f_.nk
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (118)
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (38)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/10/02 10:23:52 [info] [application] Write status is 47064
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (125)
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (38)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/10/02 10:35:04 [info] [application] Input :H-9B6A4266-Tue-23-10.mp4.mov
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (116)
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (38)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/10/02 10:35:04 [info] [application] output :5_f__comp.mov
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (117)
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (38)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/10/02 10:35:04 [info] [application] nuke :5_f_.nk
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (118)
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (38)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/10/02 10:35:04 [info] [application] Write status is 47077
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (125)
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (38)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/10/02 10:35:18 [info] [application] Input :test_ajay.mp4.mov
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (116)
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (38)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/10/02 10:35:18 [info] [application] output :6_f__comp.mov
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (117)
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (38)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/10/02 10:35:18 [info] [application] nuke :6_f_.nk
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (118)
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (38)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/10/02 10:35:18 [info] [application] Write status is 47066
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (125)
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (38)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/10/02 10:37:43 [info] [application] Input :test_ajay.mov
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (116)
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (38)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/10/02 10:37:43 [info] [application] output :6_f__comp.mov
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (117)
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (38)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/10/02 10:37:43 [info] [application] nuke :6_f_.nk
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (118)
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (38)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/10/02 10:37:43 [info] [application] Write status is 47062
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (125)
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (38)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/10/02 10:37:57 [info] [application] Input :H-9B6A4266-Tue-23-10.mov
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (116)
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (38)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/10/02 10:37:57 [info] [application] output :4_f__comp.mov
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (117)
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (38)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/10/02 10:37:57 [info] [application] nuke :4_f_.nk
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (118)
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (38)
+in D:\xampp\htdocs\bangproto\index.php (13)
+2014/10/02 10:37:57 [info] [application] Write status is 47073
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (125)
+in D:\xampp\htdocs\bangproto\protected\modules\videoPoint\controllers\DefaultController.php (38)
+in D:\xampp\htdocs\bangproto\index.php (13)

@@ -17,8 +17,8 @@ class MuploaderController extends Controller
 		return array(
 				'upload'=>array(
 						'class'=>'xupload.actions.XUploadAction',
-						'path' =>Yii::app() -> getBasePath()."/../uploads/".Yii::app()->request->cookies['siteName'],
-						'publicPath' => Yii::app() -> getBaseUrl()."/uploads/".Yii::app()->request->cookies['siteName'],
+						'path' =>Yii::app() -> getBasePath()."/../uploads/",
+						'publicPath' => Yii::app() -> getBaseUrl()."/uploads/",
 				),
 		);
 	}

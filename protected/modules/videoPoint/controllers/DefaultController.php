@@ -24,6 +24,7 @@ class DefaultController extends Controller
 		$id = $_REQUEST['id'] ;
 		if(!isset($_REQUEST['filename'])) echo 'Please select a filename for linking.';
 		$model = UserDetails::model()->findByPk($id) ;
+		$nukeInputName = basename($_REQUEST['filename'],".mp4").'.mov' ;
 		$model->original_video = $_REQUEST['filename'] ;
 		$model->status = 'File Linked' ;
 		if($model->save()){
@@ -35,7 +36,7 @@ class DefaultController extends Controller
 		$splitArr = str_split($model->gender) ;
 		$remoteFileName = $model->id.'_'.$splitArr[0].'_'.$model->extra.'_comp.mov';
 		$nukeFileName = $model->id.'_'.$splitArr[0].'_'.$model->extra.'.nk';
-		$this->createNukeFile($model->original_video,$remoteFileName,$nukeFileName );
+		$this->createNukeFile($nukeInputName,$remoteFileName,$nukeFileName );
 		
 	}
 	public function actionUploadFile(){
@@ -121,7 +122,7 @@ class DefaultController extends Controller
 		$replacedContent = str_replace(array("<<<input_file>>>","<<<output_file>>>"),array($inputFileName,$outputFileName),$str_content) ;
 		
 	//	echo  Yii::app()->getBasePath().'/../uploads/'.$file_name.'.nk' ;
-		$retVal = file_put_contents(Yii::app()->getBasePath().'//..//'.Yii::app()->params['localUpload'].'//'.Yii::app()->request->cookies['siteName'].'//'.'2014//'.$nukeFileName,$replacedContent) ;
+		$retVal = file_put_contents(Yii::app()->getBasePath().'//..//'.Yii::app()->params['localUpload'].'//'.'2014//'.$nukeFileName,$replacedContent) ;
 		Yii::log("Write status is ".$retVal ) ;	
 	}
 }
