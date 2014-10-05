@@ -6,7 +6,7 @@ class SiteController extends Controller
 	 * Declares class-based actions.
 	 */
 	public function actions()
-	{
+	{ 
 		return array(
 			// captcha action renders the CAPTCHA image displayed on the contact page
 			'captcha'=>array(
@@ -30,7 +30,7 @@ class SiteController extends Controller
 		if(isset(Yii::app()->request->cookies['siteId'])){
 			if(strcmp('Tab',Yii::app()->request->cookies['siteType'])==0){
 				$this->redirect(Yii::app()->createUrl(Yii::app()->params['kioskBaseUrl']));
-			}else if(strcmp('Laptop',$_SESSION['siteType'])==0){
+			}else if(strcmp('Laptop',Yii::app()->request->cookies['siteType'])==0){
 				$this->redirect(Yii::app()->createUrl(Yii::app()->params['videoBaseUrl']));
 			}else{
 				$this->redirect(Yii::app()->createUrl(Yii::app()->params['studioBaseUrl']));

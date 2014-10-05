@@ -145,11 +145,11 @@ return array(
 	// application-level parameters that can be accessed
 	// using Yii::app()->params['paramName']
 	'params'=>array(
-		// this is used in contact page
-		'adminEmail'=>'webmaster@example.com',
-		'configureUrl'=>'configure',
+		// this is used in contact page  
+		'adminEmail'=>'webmaster@example.com',  
+		'configureUrl'=>'site/configure',
 		'kioskBaseUrl'=>'kiosk/default',
-		'videoBaseUrl'=>'videoPoint/default',
+		'videoBaseUrl'=>'videoPoint/default',     
 		'studioBaseUrl'=>'user/login',
 		'loginUrl'=>'user/login',
 		'remoteHost'=>'14.96.211.112',
@@ -159,6 +159,6 @@ return array(
 		'downloadDir'=>'Upload', 
 		'localUpload'=>'uploads',
 		'localComposite'=>'composite',
-		
+		'defaultPageSize'=>10, 
 	),
 );

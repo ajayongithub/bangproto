@@ -33,11 +33,30 @@ class DefaultController extends Controller
 			Yii::log(print_r($_POST,true)) ;
 			$response = $_POST['response'] ;
 			//echo $response["gender"] ;
+			$validEmail = NULL ;
+			
+			if(!isset($response["email"] )||$response['email']==NULL){
+				Yii::log("Valid email not found from facebook") ;
+				if (filter_var($_POST['userName'], FILTER_VALIDATE_EMAIL)) {
+					Yii::log("Valid email not found from facebook but email in name") ;
+					$validEmail = $_POST['userName'] ;
+				}else {
+					Yii::log("Valid email not found from facebook") ;
+					echo "Please register with a valid email." ;
+					return ;
+				}
+				
+			}else{
+				Yii::log("Valid email found from facebook ".$response['email'].' is the value') ;
+				$validEmail = $response["email"] ;
+			}
 			$splitArr = str_split($response['gender']) ;
 			$model = new UserDetails() ;
 			$model->raw_data = CJSON::encode($response);
 			$model->fid = $response["id"] ; 
-			$model->email = $response["email"] ; 
+			
+			$model->email = $validEmail ;
+			 
 			$model->first_name = $response["first_name"] ; 
 			$model->gender = $splitArr[0] ;
 			$model->last_name = $response["last_name"] ; 

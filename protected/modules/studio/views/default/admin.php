@@ -42,17 +42,34 @@ return false;
 
 <h1> <?php echo Yii::t('app', 'Manage'); ?> <?php echo Yii::t('app', 'User Details'); ?> </h1>
 <button type="button" onclick="window.open('<?php echo Yii::app()->createUrl('studio/default/fetchProcessedFiles')?>','_self');" >Refresh</button><br/>
+<p>
+<!-- <form method="post">
+		<label>Page Size:</label>
+        <select name="pageSize" selected="25">
+                <option value="25">Just for now</option>
+                <option value="50">Past 1 hour</option>
+                <option value="100">Past Session</option>
+                <option value="200">One Day</option>
+                <option value="400">Two days</option>
+                <option value="800">Three days</option>
+                <option value="1600">Sorry System cant take this value</option>
+        </select>
+</form> -->
 <?php echo CHtml::link(Yii::t('app', 'Advanced Search'),'#',array('class'=>'search-button')); ?><div class="search-form" style="display: none">
     <?php $this->renderPartial('_search',array(
     'model'=>$model,
 )); ?>
 </div><!-- search-form -->
-<?php $this->widget('bootstrap.widgets.BootGridView', array(
+<?php 
+$pageSize=Yii::app()->user->getState('pageSize',Yii::app()->params['defaultPageSize']);
+$this->widget('bootstrap.widgets.BootGridView', array(
 'id' => 'user-details-grid',
 'type'=>'striped bordered condensed',
 'dataProvider' => $model->search(),
 'filter' => $model,
 'columns' => array(
+		
+		
         'id',
         'location',
      //   'raw_data',
@@ -78,9 +95,16 @@ return false;
 'class'=>'bootstrap.widgets.BootButtonColumn',
 'htmlOptions'=>array('style'=>'width: 55px'),
 ),
- */		array
+ */		/* array(
+				'class'=>'CButtonColumn',
+			
+		), */
+		array
 		(
 				'class'=>'CButtonColumn',
+				'header'=>CHtml::dropDownList('pageSize',$pageSize,array(25=>'Oridnary',100=>'Medium',200=>'Bigger',400=>'Larger',1600=>'Largest'),array(
+						'onchange'=>"$.fn.yiiGridView.update('user-details-grid',{ data:{pageSize: $(this).val() }})",
+				)),
 				'template'=>'{nuke}{publish}',//{comp}',{fetch}
 				'buttons'=>array
 				(
@@ -89,7 +113,7 @@ return false;
 								'label'=>'Nuke',
 								
 		             			'url'=>'$data->id."_".$data->gender."_".$data->extra',
-								'visible'=>'$data->status == "Video Uploaded" ',
+								'visible'=>'$data->status == "Video Uploaded" && $data->posting_status != "Uploaded" ',
 								'click'=>'function(){nukeExecution($(this).attr("href")) ;'
 								.'$.ajax({ type: "POST", url: "'.Yii::app()->createUrl('studio/default/markBeginProcessing').'", 
 												data: { href: $(this).attr("href") } })

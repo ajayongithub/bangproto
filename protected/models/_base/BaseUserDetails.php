@@ -117,7 +117,11 @@ abstract class BaseUserDetails extends CActiveRecord {
         $criteria->compare('extra', $this->extra, true);
         $criteria->order = 'id DESC ';
         return new CActiveDataProvider(get_class($this), array(
-                    'criteria' => $criteria,
+        		'pagination'=>array(
+        				'pageSize'=> Yii::app()->user->getState('pageSize',50),
+        		),
+        		'criteria' => $criteria,
+        		
                 ));
     }
 

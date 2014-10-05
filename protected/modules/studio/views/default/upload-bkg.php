@@ -25,20 +25,6 @@ $client->setClientSecret($OAUTH2_CLIENT_SECRET);
 $client->setScopes('https://www.googleapis.com/auth/youtube');
 
 
-$mailContent = ' Hi <<<username>>>,
-
-Your personalised Heroes Wanted trailer is now available online at <<<yt_link>>>
-
-Share and let the world know that Hrithik & you are on the look out for the nation’s most Bang Bang heroes.
-
-Go Bang Bang
-Mountain Dew India
-
-#MountainDewBangBang #HeroesWanted' ;
-//$redirect = filter_var('http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'],
-//    FILTER_SANITIZE_URL);
-
-            //'http://splatstudio.in/bangbang/studio/default/upload'
 $redirect = 'http://splatstudio.in/hw/studio/default/upload';//?id='.$user->id;
 $client->setRedirectUri($redirect);
 $_SESSION['yt_user_id'] = $user->id ;
@@ -118,12 +104,12 @@ echo "4.1" ;
         $chunkSizeBytes
     );
     $media->setFileSize(filesize($videoPath));
-
+	$htmlBody = "";
     Yii::import('ext.runactions.components.ERunActions');
     
     if (ERunActions::runBackground())
     {
-    
+    	
     // Read the media file and upload it chunk by chunk.
     	$status = false;
     	$handle = fopen($videoPath, "rb");

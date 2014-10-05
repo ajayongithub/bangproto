@@ -9,7 +9,7 @@
 <script>
 var current_login_status = "start";
 
- window.fbAsyncInit = function() {
+  window.fbAsyncInit = function() {
  	// init the FB JS SDK
  	FB.init({
  		appId      : '706237152757938',  // App ID from the app dashboard
@@ -65,9 +65,10 @@ function doLogin(){
 	return ;
 }
 function sendDataToServer(response){
-	var siteId  = getCookie("siteId");
-	var siteName = getCookie("siteName")
+//	var siteId  = getCookie("siteId");
+//	var siteName = getCookie("siteName")
 		var name = $('#username').val();
+		
 	$.ajax({type:"POST",url:"<?php echo Yii::app()->createUrl('/kiosk/default/storeData')?>",data:{response:response,userName:name },success:function(result){
 	    //$("#div1").html(result);
 // 	    console.log("Result recd is ");

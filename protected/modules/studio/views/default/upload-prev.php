@@ -118,12 +118,12 @@ echo "4.1" ;
         $chunkSizeBytes
     );
     $media->setFileSize(filesize($videoPath));
-
+	$htmlBody = "";
     Yii::import('ext.runactions.components.ERunActions');
     
     if (ERunActions::runBackground())
     {
-    
+    	
     // Read the media file and upload it chunk by chunk.
     	$status = false;
     	$handle = fopen($videoPath, "rb");

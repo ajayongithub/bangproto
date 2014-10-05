@@ -119,45 +119,40 @@ echo "4.1" ;
     );
     $media->setFileSize(filesize($videoPath));
 
-    Yii::import('ext.runactions.components.ERunActions');
-    
-    if (ERunActions::runBackground())
-    {
-    
-    // Read the media file and upload it chunk by chunk.
-    	$status = false;
-    	$handle = fopen($videoPath, "rb");
-    	while (!$status && !feof($handle)) {
-      		$chunk = fread($handle, $chunkSizeBytes);
-      		$status = $media->nextChunk($chunk);
-    	}
 
-    	fclose($handle);
+    // Read the media file and upload it chunk by chunk.
+    $status = false;
+    $handle = fopen($videoPath, "rb");
+    while (!$status && !feof($handle)) {
+      $chunk = fread($handle, $chunkSizeBytes);
+      $status = $media->nextChunk($chunk);
+    }
+
+    fclose($handle);
 
     // If you want to make other calls after the file upload, set setDefer back to false
-    	$client->setDefer(false);
+    $client->setDefer(false);
 
 
-    	$htmlBody1 = "<h3>Video Uploaded</h3><ul>";
-    	$htmlBody1 .= sprintf('<li>%s (%s)</li>',
+    $htmlBody .= "<h3>Video Uploaded</h3><ul>";
+    $htmlBody .= sprintf('<li>%s (%s)</li>',
         $status['snippet']['title'],
         $status['id']);
-		$url  = "http://youtube.com/watch?v=".$status["id"] ;
+	$url  = "http://youtube.com/watch?v=".$status["id"] ;
 	
-    	$htmlBody1 .= '<li>Url is : <a href="http://youtube.com/watch?v='.$status["id"].'">http://youtube.com/watch?v='.$status["id"].'</a>';
-    	$htmlBody1 .= '</ul>';
-    	$htmlBody1 .= '<hr/>' ;
-    	$htmlBody1 .= '<hr/>' ;
+    $htmlBody .= '<li>Url is : <a href="http://youtube.com/watch?v='.$status["id"].'">http://youtube.com/watch?v='.$status["id"].'</a>';
+    $htmlBody .= '</ul>';
+    $htmlBody .= '<hr/>' ;
+    $htmlBody .= '<hr/>' ;
     //$htmlBody .= print_r($status,true);
-		$htmlBody1 .= 'you tube user id :'.$_SESSION['yt_user_id'] ;
-		$user->remarks = $url ;
-		$user->posting_status = "Uploaded" ;
-		$user->save();
-		Yii::log("Upload completed".$htmlBody1);
-    }
-		//$replacedContent = str_replace(array("<<<username>>>","<<<yt_link>>>"),array($user->name,$url),$mailContent) ;
+	$htmlBody .= 'you tube user id :'.$_SESSION['yt_user_id'] ;
+	$user->remarks = $url ;
+	$user->posting_status = "Uploaded" ;
+	$user->save();
+	$replacedContent = str_replace(array("<<<username>>>","<<<yt_link>>>"),array($user->name,$url),$mailContent) ;
 	//$retVal = mail($user->email,"Your Heroes Wanted trailer",$replacedContent,"From: mountaindewindia@gmail.com ");
 	//$retVal = mail("dummyheroes@gmail.com","Your Heroes Wanted trailer",$replacedContent,"From: mountaindewindia@gmail.com ");
+	$htmlBody .= 'Mail result '.$retVal ;
   } catch (Google_ServiceException $e) {
 	//echo "5.1" ;
     $htmlBody .= sprintf('<p>A service error occurred: <code>%s</code></p>',
